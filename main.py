@@ -1,11 +1,15 @@
+from datetime import datetime
+
 import uvicorn
 from fastapi import FastAPI, Depends
 from src.users.users import auth_backend, fastapi_users, current_active_user
-from src.users.schemas import UserRead, UserCreate, UserUpdate
+from src.users.schemas import UserRead, UserCreate
 from src.database.models import User
 from src.posts.router import posts_router
 
+
 app = FastAPI()
+
 
 app.include_router(posts_router, prefix="/api")
 
