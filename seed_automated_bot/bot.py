@@ -12,8 +12,6 @@ NUMBER_OF_USERS = config['number_of_users']
 MAX_POSTS_PER_USER = config['max_posts_per_user']
 MAX_LIKES_PER_USER = config['max_likes_per_user']
 
-fake_user = Faker(['en_CA'])
-
 BASE_URL = 'http://127.0.0.1:8000'
 CREATE_POST_URL = '/api/post/create'
 REGISTER_URL = "/auth/register"
@@ -120,12 +118,12 @@ def add_likes_to_posts(token, num_of_likes=MAX_LIKES_PER_USER, username="None"):
             print(f"{username.capitalize()} liked Post № {post_id}")
 
 
-# !  __________________________________
+fake_user = Faker(['en_CA'])
+
 # !  _____________MAIN LOOP____________
 # !  __________________________________
-
 for user in range(NUMBER_OF_USERS):
-    # !  ________Creating fake user________
+    # !  ________Creating fake user data________
     fake_user_name = fake_user.user_name()
     fake_email = fake_user.ascii_email()
     fake_password = generate_password(8)
