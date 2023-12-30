@@ -1,10 +1,23 @@
 ## **Summarizing the completed work:**
 1. Developed a simple REST API using FastAPI for a social networking platform.
 2. Established interaction between user models and functionalities via FastAPI-powered API endpoints.
-3. Utilized a separate environment (e.g., Poetry) for managing project dependencies and libraries.
+3. Utilized a separate environment (e.g., virtualenv) for managing project dependencies and libraries.
 4. Implemented authentication method JWT to ensure API security.
 5. Designed and implemented key API functionalities, including user registration, post creation, and managing likes.
 6. Maintained clean and comprehensible code to enhance readability and maintainability
+
+The project has successfully delivered a scalable and functional REST API for a social networking platform. This API has allowed users to interact with posts via API endpoints, making CRUD operations smooth and seamless. The project also includes an automated bot, which showcases the system's functionalities, highlighting its versatility and usability.
+
+FastAPI, PostgreSQL, and auxiliary libraries have been used during the implementation, displaying the team's commitment to performance, security, and efficient data management.
+
+The architecture and implementation of the project are designed to accommodate future expansion and refinement, providing a solid foundation for future development iterations.
+___________
+
+🎞I included a [DEMO VIDEO](https://youtu.be/6_czcgdbpLM) that shows how the bot works. In the video, the bot creates two users, posts, and liked posts on behalf of the users. The number of users, likes, and posts is taken from the configuration file.
+
+To check the `/api/post/analytics/?date_from=2023-12-22&date_to=2023-12-23` route, at the end of the video, I generated a random distribution of new likes per day and demonstrated that the analytics between the selected dates for likes were collected correctly.
+
+
 
 ## **🔶 Social Network:**
 
