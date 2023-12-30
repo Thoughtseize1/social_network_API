@@ -124,7 +124,7 @@ def add_likes_to_posts(token, num_of_likes=MAX_LIKES_PER_USER, username="None"):
 # !  _____________MAIN LOOP____________
 # !  __________________________________
 
-for user in range(NUMBER_OF_USERS + 1):
+for user in range(NUMBER_OF_USERS):
     # !  ________Creating fake user________
     fake_user_name = fake_user.user_name()
     fake_email = fake_user.ascii_email()
