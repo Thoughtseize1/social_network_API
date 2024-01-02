@@ -42,8 +42,6 @@ Implemented token authentication (JWT)
 Repository included a automated bot — object of this bot demonstrate the functionalities of the system according to defined rules. This bot read rules from a config file (JSON), and have following fields:
  - number_of_users
  - max_posts_per_user
- - number_of_users
- - max_posts_per_user
  - max_likes_per_user
 
 Bot read the configuration and create this activity:
